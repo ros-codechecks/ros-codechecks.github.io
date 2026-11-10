@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get your code checked | ROS CODECHECK study</title>
+  <meta name="description" content="Request a CODECHECK and help a funded study find out which software qualities make research reproducible. Amsterdam UMC and TU Delft.">
+  <link rel="stylesheet" href="assets/style.css?v=10">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="./">ROS <span>CODECHECK study</span></a>
+      <p class="header-org">Amsterdam UMC and TU Delft</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1>Can someone else run your code and get your results?</h1>
+          <p class="subtitle">Prove your research is reproducible and get recognized for it.</p>
+          <p class="actions">
+            <a class="button" href="#request">Request a CODECHECK</a>
+            <a class="text-link" href="#how">See how it works</a>
+          </p>
+          <p class="lede">A CODECHECK is an independent check that your code and data reproduce what you reported. It doesn't judge the science or review your code. It confirms that the computation works.</p>
+          <p class="lede">You provide a runnable version of your code and access to your data. An experienced codechecker does the rest.</p>
+        </div>
+
+        <figure class="rerun" aria-labelledby="rerun-caption">
+          <p class="rerun-title">Example: a codechecker reruns the analysis</p>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Result</th>
+                <th scope="col">Reported</th>
+                <th scope="col" class="col-repro">Reproduced</th>
+                <th scope="col"><span class="visually-hidden">Match</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Mean difference</th>
+                <td>4.21</td>
+                <td class="col-repro">4.21</td>
+                <td><svg class="tick" viewBox="0 0 20 20" role="img" aria-label="matches"><circle cx="10" cy="10" r="9.2"/><path d="M5.9 10.4l2.9 2.9 5.4-5.9"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row">95% CI</th>
+                <td>[2.87, 5.55]</td>
+                <td class="col-repro">[2.87, 5.55]</td>
+                <td><svg class="tick" viewBox="0 0 20 20" role="img" aria-label="matches"><circle cx="10" cy="10" r="9.2"/><path d="M5.9 10.4l2.9 2.9 5.4-5.9"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row">p</th>
+                <td>.003</td>
+                <td class="col-repro">.003</td>
+                <td><svg class="tick" viewBox="0 0 20 20" role="img" aria-label="matches"><circle cx="10" cy="10" r="9.2"/><path d="M5.9 10.4l2.9 2.9 5.4-5.9"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row">Figure 2</th>
+                <td class="spark"><svg viewBox="0 0 64 20" role="img" aria-label="line chart"><polyline points="0,17 10,13 19,14 29,8 38,10 48,5 58,6 64,2"/></svg></td>
+                <td class="spark col-repro"><svg viewBox="0 0 64 20" role="img" aria-label="identical line chart"><polyline points="0,17 10,13 19,14 29,8 38,10 48,5 58,6 64,2"/></svg></td>
+                <td><svg class="tick" viewBox="0 0 20 20" role="img" aria-label="matches"><circle cx="10" cy="10" r="9.2"/><path d="M5.9 10.4l2.9 2.9 5.4-5.9"/></svg></td>
+              </tr>
+            </tbody>
+          </table>
+          <figcaption id="rerun-caption"><strong>4 of 4 results reproduced.</strong> Same code, same data, same results. A CODECHECK certificate records this comparison so anyone can check it.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="how" class="band">
+      <div class="wrap">
+        <h2>How a CODECHECK works</h2>
+        <ol class="steps">
+          <li>
+            <h3>You prepare your code and data</h3>
+            <p>Make sure someone else can run your analysis without your help. Your repository should contain the code, the data or instructions for getting access to it, the software and package versions you used, the steps to run it, and which outputs correspond to which results in your paper.</p>
+          </li>
+          <li>
+            <h3>A codechecker reruns your workflow</h3>
+            <p>Following the community <a href="https://codecheck.org.uk/guide/community-workflow-overview">CODECHECK procedure</a>, the codechecker runs your code and compares the outputs with the results you reported. If something breaks, they get in touch.</p>
+          </li>
+          <li>
+            <h3>You get a certificate</h3>
+            <p>A successful check produces a public, citable certificate on Zenodo, an entry in the <a href="https://codecheck.org.uk/register/">CODECHECK Register</a>, and a badge for your repository.</p>
+          </li>
+        </ol>
+        <p class="aside">Your code doesn't have to be perfect. If the codechecker gets stuck, they'll contact you to sort it out. Every obstacle we record helps the study.</p>
+      </div>
+    </section>
+
+    <section id="request" class="request">
+      <div class="wrap narrow">
+        <h2>Request a CODECHECK</h2>
+        <p>Researchers at Amsterdam UMC request a check through the service portal. You'll need to be logged in to the intranet.</p>
+        <p class="actions">
+          <a class="button button-light" href="https://amsterdamumc.service-now.com/esc?id=kb_article&amp;sysparm_article=KB0024283">Request through the service portal</a>
+        </p>
+        <!-- TODO: placeholder address, replace once the project mailbox exists -->
+        <p class="request-note">Not at Amsterdam UMC, or have a question first? Email <a href="mailto:ros-codecheck@amsterdamumc.nl">ros-codecheck@amsterdamumc.nl</a>.</p>
+      </div>
+    </section>
+
+    <section id="study">
+      <div class="wrap two-col">
+        <div>
+          <h2>The study</h2>
+          <p>Many researchers share code, yet others still struggle to rerun it. We want to know why. In this study we carry out CODECHECKs on research from participating institutes and record every obstacle a codechecker meets on the way: missing files, undocumented dependencies, environments that won't build, outputs that differ from the paper.</p>
+          <p>From those records we work out which qualities of research software matter most for reproducibility. The results will feed into concrete recommendations for software training and open science policy, at our own institutes and beyond.</p>
+          <p>Every CODECHECK you request gives you a certificate and adds a data point to this research. We aim to complete around 70 checks.</p>
+        </div>
+        <aside class="facts" aria-label="Study facts">
+          <dl>
+            <div><dt>Method</dt><dd>CODECHECK (Nüst &amp; Eglen, 2021)</dd></div>
+            <div><dt>Target</dt><dd>About 70 checks</dd></div>
+            <div><dt>Time per check</dt><dd>At most 4 hours of codechecker work</dd></div>
+            <div><dt>Funding</dt><dd>Open Science NL and NWO, Research on Open Science call</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section id="codecheckers" class="band">
+      <div class="wrap narrow">
+        <h2>For codecheckers</h2>
+        <p>Codecheckers in the study follow a shared standard operating procedure. Each check is limited to four hours of hands-on work; time a computer spends running unattended does not count. Along the way, codecheckers log the obstacles they run into in a structured form, so checks across institutes can be compared.</p>
+        <p>Interested in becoming a codechecker, or already checking at your institute and want to take part? Email <a href="mailto:ros-codecheck@amsterdamumc.nl">ros-codecheck@amsterdamumc.nl</a>.</p>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="wrap">
+        <h2>Team</h2>
+        <div class="team">
+          <div>
+            <h3>Amsterdam UMC</h3>
+            <ul>
+              <li>Merel Postema, project lead</li>
+              <li>Thomas Pronk</li>
+              <li>Bauke van der Velde</li>
+            </ul>
+          </div>
+          <div>
+            <h3>TU Delft</h3>
+            <ul>
+              <li>João Guimarães</li>
+              <li>Yasel Quintero Lares</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>A collaboration between Amsterdam UMC and TU Delft, funded by Open Science NL and NWO (file 110.110.017). Built on the <a href="https://codecheck.org.uk/">CODECHECK</a> initiative.</p>
+      <p>This site uses no cookies and no tracking. <a href="https://github.com/ros-codechecks/ros-codechecks.github.io">Source on GitHub</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
